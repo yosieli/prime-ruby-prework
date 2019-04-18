@@ -1,14 +1,11 @@
-# Add  code here!
-def prime?(*nums)
-    nums.each do |num|
-    i = 2
-      while i < num
-        if num % i == 0
-          puts "#{num} is not a prime"
-        else
-          puts "#{num} is a prime"
+# Add  code here
+    def prime?(integer)
+    return false if integer < 2
+    (2..integer - 1).each do |x|
+        if (integer % x) == 0
+            return false
         end
-        i += 1
-      end
-   end
+    end
+    true
 end
+
